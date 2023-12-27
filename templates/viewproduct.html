@@ -1,0 +1,64 @@
+{% extends "adminheader.html" %}
+{% block content %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>viewproduct</title>
+      <style>
+          table,tr,td,th{
+          text-align:center;
+          }
+          table{
+          margin-left:320px;
+          }
+          tr,td,th{
+          padding:10px;
+          }
+          th{
+          color:#00BFFF;
+          }
+
+          h3{
+          color:#00BFFF;
+          }
+      </style>
+  </head>
+  <body >
+<section>
+  <div class="container">
+  </div>
+    <center>
+        <h3 style="font-size:30px;">Products Data</h3></center>
+    <table border="2px solid black", cellspacing="0px",cellpadding="50px" style="text-align:center;">
+        <center>
+        <tr>
+            <th>productid</th>
+            <th>product name</th>
+            <th>product type</th>
+            <th>quantity</th>
+            <th>price</th>
+            <th>image</th>
+            <th>Delete</th>
+        </tr>
+        {% for temp in rows %}
+        <tr style="text-align:center;">
+            <td style="text-align:center;">{{temp[0]}}</td>
+            <td>{{temp[1]}}</td>
+            <td>{{temp[2]}}</td>
+            <td>{{temp[3]}}</td>
+            <td>{{temp[4]}}</td>
+            <td>
+            <img src="/static/uploads/{{temp[5]}}" width="100px" height="100px"/>
+            </td>
+            <td>
+            <a href="/deleteproduct?id={{temp[0]}}">Delete Product</a>
+            </td>
+        </tr>
+        {% endfor %}
+            </center>
+    </table>
+
+  </body>
+</html>
+{% endblock %}

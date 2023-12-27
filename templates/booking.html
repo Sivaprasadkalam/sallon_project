@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+        
+        .navbar-brand {
+            color: #00bfff;
+            font-size: 2.5vw;
+            font-family:  'Rye', cursive;
+            padding-left: 100px;
+        }
+
+        .parallex {
+            position: relative;
+            background-image: url('static/img/bookbg.jpg'); /* Change the image URL to your background image */
+            background-size:cover;
+            background-attachment: fixed; /*This creates the parallax effect*/
+            background-position: top center;
+            height: 70vh; 
+            overflow: hidden;
+          }
+          .parallax-content {
+            position: relative;
+            z-index: 1;
+            text-align: center; /* Adjust the alignment as needed */
+            padding: 100px 0; /* Adjust the padding as needed */
+            color: #fff; /* Adjust the text color as needed */
+            /* Other styles for your content */
+          }
+
+        .content{
+            position: absolute;
+            bottom:500px;
+            left: 600px;
+            top: 300px;
+            font-size: 40px;
+        }  
+       
+        .container{
+            width: 900px;
+            height: 700px;
+            padding: 60px;
+            margin-left: 320px;
+            font-size: 20px;
+        }
+        .container input[type=text]{
+            width: 100%;
+            height: 40px;
+        }
+        .container input[type=email]{
+            width: 100%;
+            height: 35px;
+        }
+        .container input[type=tel]{
+            width: 100%;
+            height: 35px;
+        }
+        .container input[type=radio]{
+            margin-left:20px;
+        }
+        .container input[type=date]{
+            width: 100%;
+            height: 35px;
+        }
+        .container input[type=time]{
+            width: 100%;
+            height: 35px;
+        }
+        textarea{
+            width: 100%;
+            height: 35px;
+        }
+        button{
+            width: 100%;
+            height: 35px;
+            border-color: #00bfff;
+            background-color: white;
+            border-radius: 45px;
+        }
+        button:hover{
+            background-color: #00bfff;
+        }
+
+        .footer{
+            position: relative;
+            background-color:lightblue;
+            color: black;
+            height: 450px;
+            padding: 50px 150px;
+            margin-top: 150px;
+        }
+        
+        .footer .col .socials a{
+            letter-spacing: 30px;
+        }
+        
+        .container6 h1{
+            color: #00Bfff;
+        }
+        .container6 p{
+            color: black
+        }
+        .container6 p:hover{
+            color: #00BFFF;
+        }
+        .container6 a{
+            text-decoration: none;
+            color: black;
+        }
+        .container6 a:hover{
+            color: #00Bfff;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Y | S</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+
+      <section id="home">
+        <div class="parallex">
+          <div class="parallex-content">
+          </div>
+        </div>
+      </section>
+
+      <div class="content" >
+        <p class="center" data-aos="zoom-in" data-aos-duration="2000" >Book an Appointment.</p>
+      </div>
+
+
+
+    <div class="container">
+      <h1 >Booking</h1>
+    <form  onsubmit="kFunction()" method="post" action="/booking">
+        <label for="name" >Name*</label><br>
+        <input type="text" size="50" placeholder="Your Name"  name="uname" onblur="myFunction()" required onfocus="cFunction(this)"><br><br>
+        <label for="email">Email*</label><br>
+        <input type="email" size="50" name="email" placeholder="Your Email" required><br><br>
+        <label for="phone">Phone*</label><br>
+        <input type="tel" size="10" maxlength="10" name="phone" placeholder="Your Phone" required><br><br>
+        <label for="gender">Gender*</label><br>
+        <input type="radio" value="male" id="male" name="Gender*">Male
+        <input type="radio" value="female" id="female" name="Gender*">Female
+        <input type="radio" value="other" id="others" name="Gender*">Other<br><br>
+
+        <label for="date">Bookin Date*</label><br>
+        <input type="date" size="50" name="date" placeholder="dd-mm-yyyy" ><br><br>
+        <label for="time">Preferred Time*</label><br>
+        <input type="time" size="50" name="time" required><br><br>
+        <label for="addr">Address*</label><br>
+        <textarea  id="addr" cols="45" name="address" placeholder="Your Address" required onkeydown="dFunction()"></textarea><br><br>
+        <button >submit</button>
+        <P id="key"></P>
+    </form>
+    </div>
+
+    <footer id="Place">
+        <div class="container6">
+        <div class="footer">
+          <div class="row">
+            <div class="col">
+          <h1>Head Office</h1>
+            <p>3rd Block Bhashyam Circle,</p>
+            <p>Rajajinagar,</p>
+            <p>Bengaluru,</p>
+            <p>Karnataka 560010</p><br> 
+          <h1>Telephone Enquiry</h1>
+          <p>+91 9876554321</p>
+        </div>
+        <div class="col">
+          <h1>Style</h1><br>
+            <a href="#home">Home</a><br>
+            <a href="#about">About Us</a><br>
+            <a href="#style">Style</a><br>
+            <a href="#Our_Team">Our Team</a><br>
+            <a href="#locate_us">Locate Us</a>
+        </div>
+        <div class="col">
+          <h1>Email Us</h1>
+          <p>urstyle@gmail.com</p><br>
+          <h1>Follow Us</h1>
+          <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #005eff;"></i></a> 
+          <a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #ff00bb;"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter fa-2xl" style="color: #000000;"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin fa-2xl" style="color: #005eff;"></i></a>
+        </div>
+        </div>
+        <div class="col">
+           <br>
+        </div>
+        </div>
+        </div>
+        </div>
+      </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script>
+  //onblur change text into uppercase
+  function myFunction() {
+    let x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+  }
+  //submit
+  function kFunction(){
+    alert("Successfully Booked")
+  }
+  //onfocus input color change
+  function cFunction(x) {
+    x.style.background = "lightblue";
+  }
+
+ //keydown
+ 
+ function dFunction() {
+  document.getElementById("key").innerHTML = "You pressed a key inside the input field";
+}
+</script>
+  
+
+
+</body>
+</html>

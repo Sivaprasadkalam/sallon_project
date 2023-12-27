@@ -1,0 +1,47 @@
+{% extends "adminheader.html" %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viewbooking</title>
+    <style>
+
+        table{
+        margin-left:200px;
+         }
+        th{
+        color: #00BFFF;
+        }
+    </style>
+</head>
+<body>
+<table border="2px solid black" cellspacing="0px" cellpadding="20px">
+    <center>
+    <h2 style="color:#00BFFF;">User Booking</h2>
+    <tr>
+        <th>Booking id</th>
+        <th>User name</th>
+        <th>Email id</th>
+        <th>Phone number</th>
+        <th>Gender</th>
+        <th>Booking Date</th>
+        <th>Booking Time</th>
+        <th>Address</th>
+    </tr>
+    {% for x in data %}
+    <tr>
+        <td>{{x[0]}}</td>
+        <td>{{x[1]}}</td>
+        <td>{{x[2]}}</td>
+        <td>{{x[3]}}</td>
+        <td>{{x[4]}}</td>
+        <td>{{x[5]}}</td>
+        <td>{{x[6]}}</td>
+        <td>{{x[7]}}</td>
+    </tr>
+    {% endfor %}
+        </center>
+</table>
+</body>
+</html>
+{% endblock %}

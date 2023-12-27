@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+.container .navbar-brand{
+    color:#FF69B4;
+    font-size: 2.5vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Rye', cursive;
+}
+
+.container {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 50px;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    font-size: 14px;
+}
+
+.container .nav-item{
+    margin-left: 10px;
+}
+
+
+
+.parallex {
+    position: relative;
+    background-image: url('/static/img/backgroundwomen.jpg'); /* Change the image URL to your background image */
+    background-size:cover;
+    background-attachment: fixed; /*This creates the parallax effect*/
+    background-position: top center;
+    height: 95vh; 
+    overflow: hidden;
+  }
+  
+  .parallax-content {
+    position: relative;
+    z-index: 1;
+    text-align: center; /* Adjust the alignment as needed */
+    padding: 100px 0; /* Adjust the padding as needed */
+    color: #fff;     /* Adjust the text color as needed */
+    /* Other styles for your content */
+  }
+
+  .content .center{
+    position: absolute;
+    bottom: 50%;
+    left: 25%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+.content .center-down{
+    position: absolute;
+    bottom: 40%;
+    left: 15%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    color: white;
+}
+
+.container3{
+    width:1506px;
+}
+
+.container3 h1{
+    text-align: center;
+    margin: 30px;
+    color: #FF69B4;
+    
+}
+
+.card{
+    margin:0px;
+    width: 400px;
+    margin: 20px;
+}
+
+.card img{
+    width: 300px;
+    height:400px;
+    margin-left:50px;
+    padding: 30px;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+
+.card-body .card-title{
+    color: #FF69B4;
+    text-align: center;
+    text-transform:uppercase;
+    font-size: 30px;
+
+   
+}
+
+.card-body .card-text{
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    text-align: center;
+}
+
+.footer{
+    position: relative;
+    background-color:rgb(244, 217, 221);
+    color: black;
+    height: 300px;
+    padding: 20px;
+    margin-top: 0px;
+}
+
+
+.footer .col h1{
+    margin-left: 30px;
+}
+
+
+.footer .col .socials a{
+    letter-spacing: 30px;
+}
+.container6 .col ul li{
+    list-style-type:none;
+    font-weight: bold;
+}
+
+.footer .row .logo h1{
+    font-size: 130px;
+    color: #00BFFF;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: 'Rye', cursive;
+}
+
+.footer .col h1{
+    font-size: 30px;
+    color:#FF69B4;
+}
+
+.container6 p{
+    font-weight: bold;
+    color: black
+}
+.container6 p:hover{
+    color: #FF69B4;
+}
+.container6 a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.container6 a:hover{
+    color: #FF69B4;
+}

@@ -1,0 +1,64 @@
+{% extends "adminheader.html" %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Addproduct</title>
+    <style>
+        h2{
+         text-align:center;
+         color: #00BFFF;
+        }
+        form{
+        border:2px solid black;
+        border-radius:45px;
+        shadow:40px;
+        width:450px;
+        height:530px;
+        padding-left:40px;
+        padding-top:40px;
+        margin-left:500px;
+        }
+
+        form input{
+        border-radius:45px;
+            width: 90%;
+            height: 35px;
+        }
+        form label{
+            color: #00BFFF;
+        }
+        form select{
+          border-radius:45px;
+            width: 90%;
+            height: 35px;
+        }
+        form input[type=file]{
+        padding:6px;
+        }
+
+    </style>
+</head>
+<body>
+<h2>Add Product</h2>
+<form action="/addproduct" method="post" enctype="multipart/form-data">
+    <label>Product Name</label><br><br>
+    <input type="text" name="pname"><br><br>
+    <label>Product Type</label><br><br>
+    <select name="ptype"><br><br>
+        <option>Shampoo</option>
+        <option>Conditioner</option>
+        <option>Hair Dye</option>
+    </select><br><br>
+    <label>Quantity</label><br><br>
+    <input type="text" name="quantity" ><br><br>
+    <label>Price</label><br><br>
+    <input type="text" name="price" id="price"><br><br>
+    <label>File</label><br><br>
+    <input type="file" name="file" id="file"><br><br>
+    <input type="submit" value="Submit Product"><br><br>
+</form>
+{{msg}}
+</body>
+</html>
+{% endblock %}

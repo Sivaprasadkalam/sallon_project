@@ -1,0 +1,31 @@
+{% extends "adminheader.html" %}
+{% block content %}
+<html lang="en">
+<meta charset="UTF-8">
+    <title>Adminmain</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        i{
+        margin-top:150px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container" data-aos="zoom-in" data-aos-duration="2000">
+<i class="fa-solid fa-circle-check"style="color: #00eb00;font-size:150px;"></i>
+<h2>Welcome Siva Prasad[Admin]</h2>
+    <h3 style="margin-left:30px;">Here you can add and delete product </h3>
+<h3 style="margin-left:20px;">In view customer your can see the customer details</h3>
+<h3 style="margin-left:20px;">Using the view booking you can view the booking of the product </h3>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your style</title>
+
+    <link rel="stylesheet" href="static/css/urstyle.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body onbeforeprint="myFunction()">
+
+    <!-- NAV-BAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Y | S </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark active"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark active"
+                aria-current="page"
+                href="#about"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark active"
+                aria-current="page"
+                href="#style"
+                >Style</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark active"
+                aria-current="page"
+                href="/booking"
+                target="_blank"
+                >Book Now</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark active"
+                aria-current="page"
+                href="#Our_Team"
+                >Our Team</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark active"
+                aria-current="page"
+                href="#locate_us"
+                >Location</a>
+
+            </li>
+            <li>
+              <a
+              class="nav-link text-dark active"
+              aria-current="page"
+              href="/register" style="margin-left: 550px;"
+              >Register</a>
+            </li>
+            <li>
+              <a
+              class="nav-link text-dark active"
+              aria-current="page"
+              href="/login"
+              >User</a>
+            </li>
+            <li>
+              <a
+              class="nav-link text-dark active"
+              aria-current="page"
+              href="/admin"
+              >Admin</a>
+            </li>
+          </ul>
+        </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- DARK MODE -->
+    <div class="dark-mode-toggle">
+      <input
+        type="radio"
+        id="dark-mode-toggle"
+        name="dark-mode"
+        class="dark-mode-checkbox"
+      />
+      <label for="dark-mode-toggle" class="dark-mode-label">
+        <span class="toggle"></span>
+      </label>
+    </div>
+
+    <!-- HOME SECTION -->
+
+    <section id="home">
+      <div class="parallex">
+        <div class="parallex-content"></div>
+      </div>
+    </section>
+
+    <div class="content">
+      <p class="center" data-aos="zoom-in" data-aos-duration="2000" style="color:black;">
+        Fashion With Care.
+      </p>
+      <p
+        class="subtitle"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="1000"
+        data-aos-easing="ease"
+      >
+        <strong>Your Location Your Style</strong>
+      </p>
+    </div>
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about">
+      <div class="container-1">
+        <img
+          src="static/img/aboutus.jpeg"
+          alt=""
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        />
+        <div class="text" data-aos="fade-right" data-aos-duration="2000">
+          <h1><u>About Us</u></h1>
+          <div class="us">
+            <p id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">
+              We are start up ,but we have very much experienced in this field.
+              We have international level experienced workers and we have one
+              special options
+              <u> "we are ready to improve your style at Your Place" </u> and we
+              improve <br>
+              <strong><i>"Your Style"</i></strong>
+            </p>
+          </div>
+          <div class="moto">
+            <p>“Improve your selfies, see your stylist.”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR SERVICES -->
+
+    <div class="container7">
+      <div class="row">
+        <div class="col1">
+          <img src="static/img/services.webp" alt="" />
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="col2">
+            <div class="accordion-item bg-light">
+              <h1>Our Services</h1>
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Mens Hairstyle
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse bg-light"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Discover the latest trends in men's grooming with our expert
+                  hairstylists. From classic cuts to modern fades, we specialize
+                  in creating hairstyles that suit your unique personality and
+                  lifestyle. Trust us to give you a fresh and confident look.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Womens Hairstyle
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse bg-light"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Elevate your style with our wide range of women's hairstyling
+                  options. Whether you're looking for a chic bob, glamorous
+                  curls, or a sleek updo, our team of experienced stylists is
+                  here to make your hair dreams a reality. Unleash your inner
+                  beauty and confidence.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Products Sale
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse bg-light"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Explore our exclusive hair product sale and pamper your hair
+                  with the best in hair care. From nourishing shampoos to
+                  luxurious hair masks, we offer a curated selection of premium
+                  products at unbeatable prices. Don't miss out on this
+                  opportunity to elevate your hair care routine.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SELECT GENDER -->
+      <!-- fLIP BOX -->
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <h1>SELECT GENDER</h1>
+        </div>
+        <div class="flip-box-back">
+           <div class="row">
+        <div class="col">
+          <a href="/menhair" target="_blank">
+            <!-- Link to the men's hairstyles page -->
+            <img src="static/img/boy.png" alt="Men's Hairstyle" />
+          </a>
+        </div>
+        <div class="col">
+          <p>MENS--------WOMENS</p>
+        </div>
+        <div class="col">
+          <a href="/womenhair" target="_blank">
+            <!-- Link to the women's hairstyles page -->
+            <img src="static/img/girl.png" alt="Women's Hairstyle" />
+          </a>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOR SALE -->
+
+    <section id="style">
+      <div class="container3">
+        <div class="search">
+          <h1>PRODUCTS</h1> <br>
+          <input type="text" class="searchTerm"  id="searchInput" placeholder="Search something.." oninput="searchConditioners()">
+          <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+          </button>
+      </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+                <a href="/userviewproduct" target="_blank">
+              <img
+                src="static/img/khadiconditioner.webp"
+                class="card-img-top"
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title primary">
+                  Khadi Natural Amla & Reetha Hair Conditioner 210ml|For Hair
+                  Fall Rescue
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+                <a href="/userviewproduct" target="_blank">
+              <img
+                src="static/img/coconutsoleconditioner.webp"
+                class="card-img-top"
+                alt="..."
+              />
+                </a>
+
+              <div class="card-body">
+                <h5 class="card-title">
+                  Coco Soul Hair + Scalp Conditioner with Coconut & Ayurveda For
+                  Frizz-Free | Shiny
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+                <a href="/userviewproduct" target="_blank">
+              <img
+                src="static/img/himalayaconditioner.webp"
+                class="card-img-top"
+                alt="..."
+              />
+                </a>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Himalaya Damage Repair Protein Conditioner | For Healthy &
+                  Silky Smooth Hair
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+                <a href="/userviewproduct" target="_blank">
+              <img
+                src="static/img/doveconditioner.webp"
+                class="card-img-top"
+                alt="..."
+              />
+                </a>
+
+              <div class="card-body">
+                <h5 class="card-title">Dove Hairconditioner</h5>
+                <!-- <p class="card-text">
+                  Dove Intense Repair Conditioner 175 ml, With Keratin Actives
+                  to Smoothen Dry and Frizzy Hair - Deep Conditions Damaged Hair
+                  for Men & Women
+                </p> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+                <a href="/userviewproduct" target="_blank">
+              <img
+                src="static/img/tresemmeconditioner.webp"
+                class="card-img-top"
+                alt="..."
+              />
+                </a>
+              <div class="card-body">
+                <h5 class="card-title">TREsemme Conditioner</h5>
+                <!-- <p class="card-text">
+                  TRESemme Keratin Smooth Conditioner 190 ml, With Keratin &
+                  Argan Oil for Straight, Shiny Hair - Nourishes Dry Hair &
+                  Controls Frizz, For Men & Women, Lilac Link
+                </p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+                <a href="/userviewproduct" target="_blank">
+              <img
+                src="static/img/panteneconditioner.webp"
+                class="card-img-top"
+                alt="..."
+              />
+                </a>
+              <div class="card-body">
+                <h5 class="card-title">Pantene Conditioner</h5>
+                <!-- <p class="card-text">
+                  Pantene Advanced Hair Fall Solution Anti Hair Fall Conditioner
+                  For Damaged Hair, 200ml (Fresh)
+                </p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+                <a href="/userviewproduct" target="_blank">
+              <img
+                src="static/img/L'Orealconditioner.webp"
+                class="card-img-top"
+                alt="..."
+              />
+                </a>
+              <div class="card-body">
+                <h5 class="card-title">L'OREAL paris HairConditioner</h5>
+                <!-- <p class="card-text">
+                  L'Oreal Paris Conditioner, Moisturising & Hydrating, For Dull,
+                  Dry & Lifeless Hair, 6 Oil Nourish, 180ml
+                </p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+                <a href="/userviewproduct" target="_blank">
+              <img
+                src="static/img/biolageconditioner.webp"
+                class="card-img-top"
+                alt="..."
+              />
+                </a>
+              <div class="card-body">
+                <h5 class="card-title">
+                Biolage Hairconditioner
+                </h5>
+                <!-- <p class="card-text">
+                  Biolage Smoothproof Conditioner For Frizzy Hair | Provides
+                  Humidity Control & Anti-Frizz Smoothness | With Camellia
+                  Flower | Natural & Vegan (98gms)
+                </p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+                <a href="/userviewproduct" target="_blank">
+              <img
+                src="static/img/matrixconditioner.webp"
+                class="card-img-top"
+                alt="..."
+              />
+                </a>
+              <div class="card-body">
+                <h5 class="card-title">Matrix HairConditioner</h5>
+                <!-- <p class="card-text">
+                  Matrix Opti.Care Professional Smooth Straight with Shea
+                  Butter, Up to 4 Days of Frizz Control
+                </p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+                <a href="/userviewproduct" target="_blank">
+              <img src="static/img/mamaearth.webp" class="card-img-top" alt="..." />
+                </a>
+              <div class="card-body">
+                <h5 class="card-title">Mamaearth Hairconditioner</h5>
+                <!-- <p class="card-text">
+                  Mamaearth Onion Conditioner for Hair Growth & Hair Fall
+                  Control with Coconut Oil 250ml
+                </p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+                <a href="/userviewproduct" target="_blank">
+              <img src="static/img/dovecurls.webp" class="card-img-top" alt="..." />
+                </a>
+              <div class="card-body">
+                <h5 class="card-title">Dove Beautiful Hairconditioner</h5>
+                <!-- <p class="card-text">
+                  Dove Beautiful Curls Detangling Conditioner 380 ml, For Curly
+                  Hair
+                </p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+                <a href="/userviewproduct" target="_blank">
+              <img
+                src="static/img/biotiqueconditioner.webp"
+                class="card-img-top"
+                alt="..."
+              />
+                </a>
+              <div class="card-body">
+                <h5 class="card-title">Biotique HairConditioner</h5>
+                <!-- <p class="card-text">
+                  Biotique Thyme Volume Conditioner for Fine and Thinning Hair |
+                  Gives Volume and Bounce to Hair | Helps in Thicken Follicles
+                  |100% Botanical Extracts| Suitable for All Skin Types | 180ml
+                </p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Telegram Page -->
+
+    <div class="container10" style="margin-bottom: 50px">
+      <section id="telegram">
+        <div class="container">
+          <div class="telegram">
+            <a href="https://t.me/Siva_Prasad_Kalam" target="_blank" style="color: rgb(35, 179, 236); font-size: 60px; position: fixed ; bottom: 5px; right: 5px;  z-index: 2;"><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- OUR TEAM -->
+
+    <section id="Our_Team">
+      <div class="container4">
+        <div class="team">
+          <h1>OUR TEAM</h1>
+        </div>
+        <div class="slider-container">
+          <div class="slide">
+            <img src="static/img/ourteam.avif" alt="Testimonial 1" />
+            <p
+              class="testimonial-text"
+              id="myP"
+              onmousedown="mouseDown()"
+              onmouseup="mouseUp()"
+            >
+              I had a great experience working with this company. Their team is
+              highly professional and delivered outstanding results."
+            </p>
+            <p class="testimonial-author">- John Doe</p>
+          </div>
+          <div class="slide">
+            <img src="static/img/ourteam1.jpg" alt="Testimonial 2" />
+            <p class="testimonial-text">
+              The service provided by this company exceeded my expectations. I
+              highly recommend them!"
+            </p>
+            <p class="testimonial-author">- Jane Smith</p>
+          </div>
+
+          <button class="prev" onclick="changeSlide(-1)"><b><<</b></button>
+          <button class="next" onclick="changeSlide(1)"><b>>></b></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMBEDDED VIDEOS -->
+
+    <div class="container9">
+      <div class="row">
+        <div class="col">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/-FnrCZJw6TE?si=YHibWfNzaAr65k-_"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            style="margin-left: 200px"
+          ></iframe>
+        </div>
+        <div class="col">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/RWr8XeBUxTU?si=JCAoCEw8H270PVMS&amp;controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+     <!-- DETAILS -->   <!-- GOOGLE MAP -->
+     <section id="locate_us">
+     <div class="details">
+      <div class="row">
+        <div class="col">
+
+      <form action="">
+        <h1>Enter Your Details</h1><br><br><br>
+        <label for="name">Enter Your Name:</label>
+        <input type="text" name="name" id=""><br><br>
+        <label for="email">Enter Your Email:</label>
+        <input type="email" name="email" id=""><br><br>
+        <label for="phone">Contact Number:</label>
+        <input type="tel" name="phone" id=""><br><br><br>
+        <input type="submit" value="SUBMIT">
+      </form>
+    </div>
+    <div class="col">
+      <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.9494407144387!2d77.5534404441588!3d12.984783197599034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d5c8fb7b281%3A0x37aa8438b267ef61!2sSJR%20PG%20FOR%20GENTS!5e0!3m2!1sen!2sin!4v1693824289909!5m2!1sen!2sin"
+            width="750px"
+            height="500px"
+            style="border: 0px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      </div>
+      </section>
+
+    <!-- FOOTER SECTION -->
+
+    <footer id="Place">
+      <div class="container6">
+        <div class="footer">
+          <div class="row">
+            <div class="col">
+              <div class="logo">
+              <h1>Y | S</h1>
+              </div>
+            </div>
+            <div class="col">
+              <h1>HEAD OFFICE</h1>
+              <ul>
+              <li>3rd Block Bhashyam Circle,</li>
+              <li>Rajajinagar,</li>
+              <li>Bengaluru,</li>
+              <li>Karnataka 560010</li>
+            </ul>
+            </div>
+            <div class="col">
+              <h1>LINKS</h1>
+              <a href="#home">Home</a><br />
+              <a href="#about">About Us</a><br />
+              <a href="#style">Style</a><br />
+              <a href="#Our_Team">Our Team</a><br />
+              <a href="#locate_us">Locate Us</a>
+            </div>
+            <div class="col">
+              <h1>CONTACT</h1>
+              <p>urstyle@gmail.com</p>
+              <p>+91 9876554321</p>
+              <hr>
+              <div class="socials">
+                <a href="https://www.facebook.com" target="_blank"
+                  ><i
+                    class="fa-brands fa-facebook fa-2xl"
+                    style="color: #005eff"
+                  ></i
+                ></a>
+                <a href="https://www.instagram.com" target="_blank"
+                  ><i
+                    class="fa-brands fa-instagram fa-2xl"
+                    style="color: #ff00bb"
+                  ></i
+                ></a>
+                <a href="https://www.x.com" target="_blank"
+                  ><i
+                    class="fa-brands fa-x-twitter fa-2xl"
+                    style="color: #000000"
+                  ></i
+                ></a>
+                <a href="https://www.linkedin.com" target="_blank"
+                  ><i
+                    class="fa-brands fa-linkedin fa-2xl"
+                    style="color: #005eff"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <i class="fa-regular fa-copyright">
+        Copyright Y|S All Rights Reserved.
+      </i>
+      <p>YOUR STYLE SALLON.</p>
+
+      </div>
+
+    <script src="static/js/urstyle.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+{% extends "customerheader.html" %}
+{% block content %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Userviewproduct</title>
+      <style>
+    h3{
+    font-size:30px;
+    color:#00BFFF;
+    }
+    table{
+    margin-left:170px;
+    text-align:center;
+    }
+    th{
+    color:#00BFFF;
+    font-size:23px;
+    }
+    td{
+    font-size:20px;
+    }
+    tr,td{
+    text-align:center;
+    }
+    tr a {
+    text-align: center;
+  }
+
+    </style>
+  </head>
+  <section>
+      <center>
+        <h3>Products Data</h3></center>
+    <table border="2px solid black;" cellspacing="0px" cellpadding="20px">
+        <tr>
+            <th>productid</th>
+            <th>product name</th>
+            <th>product type</th>
+            <th>quantity</th>
+            <th>price</th>
+            <th>image</th>
+            <th>Select</th>
+        </tr>
+        {% for temp in data %}
+        <tr>
+            <td>{{temp[0]}}</td>
+            <td>{{temp[1]}}</td>
+            <td>{{temp[2]}}</td>
+            <td>{{temp[3]}}</td>
+            <td>{{temp[4]}}</td>
+            <td>
+            <img src="/static/uploads/{{temp[5]}}" width="100px" height="100px"/>
+            </td>
+            <td>
+            <a href="/customerselectproduct?id={{temp[0]}}">Select Product</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+  </section>
+
+
+  </body>
+</html>
+{% endblock %}

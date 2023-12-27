@@ -1,0 +1,63 @@
+{% extends 'customerheader.html' %}
+{% block content %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Customerviewcart</title>
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/furniture.css') }}">-->
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/testinomial.css') }}">
+   <style>
+    h3{
+    font-size:30px;
+    color:#00BFFF;
+    }
+    table{
+    margin-left:200px;
+    text-align:center;
+    }
+    th{
+    color:#00BFFF;
+    font-size:23px;
+    }
+    td{
+    font-size:20px;
+    }
+   </style>
+  </head>
+<section>
+    <body>
+    <center>
+        <h3>Cart Data</h3></center>
+    <table border="2px solid black;" cellspacing="0px;" cellpadding="20px;">
+        <tr>
+            <th>cartid</th>
+            <th>register id</th>
+            <th>name</th>
+            <th>productid</th>
+            <th>Productname</th>
+            <th>producttype</th>
+            <th>quantity</th>
+            <th>price</th>
+            <th>total</th>
+        </tr>
+        {% for temp in rows %}
+        <tr>
+            <td>{{temp[0]}}</td>
+            <td>{{temp[1]}}</td>
+            <td>{{name}}</td>
+            <td>{{temp[3]}}</td>
+            <td>{{temp[4]}}</td>
+            <td>{{temp[5]}}</td>
+            <td>{{temp[6]}}</td>
+            <td>{{temp[7]}}</td>
+            <td>{{temp[8]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+  </body>
+</section>
+</html>
+{% endblock %}

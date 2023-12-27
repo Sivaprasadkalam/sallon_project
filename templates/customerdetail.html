@@ -1,0 +1,40 @@
+{% extends "adminheader.html" %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer detail</title>
+    <style>
+        table th{
+        color: #00BFFF;
+         }
+    </style>
+</head>
+<body>
+
+<center>
+    <h2 style="margin-top:40px;color: #00BFFF;">Customer Details</h2>
+<table border="1px solid black" cellspacing="0px" cellpadding="20px" style="margin-top: 50px;">
+    <tr>
+        <th>Register id</th>
+        <th>Name</th>
+        <th>Email id</th>
+        <th>Phone no</th>
+        <th>Username</th>
+        <th>Password</th>
+    </tr>
+    {% for x in data %}
+    <tr>
+        <td>{{x[0]}}</td>
+        <td>{{x[1]}}</td>
+        <td>{{x[2]}}</td>
+        <td>{{x[3]}}</td>
+        <td>{{x[4]}}</td>
+        <td>{{x[5]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+    </center>
+</body>
+</html>
+{% endblock %}
